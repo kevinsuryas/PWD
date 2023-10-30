@@ -1,0 +1,17 @@
+<script>
+    const totalBelanja = 100000 //(parameter)
+    const isFailed = false
+    // 1. Show Prompt
+    do{
+    const uangUser = Number (prompt(`Total Belanja = ${totalBelanja}. Masukan Uang Anda:`))
+    // Number, untuk mengubah string menjadi number
+    // 2. Show Alert --> Condition Success 2. Condition Failed
+   
+    if(uangUser >= totalBelanja){
+        alert(`Success! Uang Kembalian Anda=${uangUser - totalBelanja}`)
+    } else{
+        alert('Failed!')
+        isFailed = true
+    }
+    }while(isFailed ===true)
+</script>
